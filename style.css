@@ -1,0 +1,69 @@
+/* GENERAL STYLE*/
+body,html{
+  margin:0;
+  padding:0;
+  font-family: "Luna"
+  font-size: 1.05em;
+}
+
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+ 
+
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding: 1em 0;
+}
+header * {
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+header p {
+  margin:0 50px 0 50px;
+}
+/*PARALLAX*/
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+/*STATIC ELEMENTS*/
+.static {
+  background-color: #6F76AD;
+  height: 60vh;
+}
+.static1 {
+  background-color: #6F76AD;
+  height: 60vh;
+}
+ /*BACKGROUND PHOTOS*/
+.bg1::after {
+  background-image: url("https://images.pexels.com/photos/443356/pexels-photo-443356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.bg2::after {
+  background-image: url("https://images.unsplash.com/photo-1519356148257-a555be15bd43?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=174302012048566625433b362827b59a&auto=format&fit=crop&w=750&q=80");
+}
